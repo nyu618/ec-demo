@@ -33,7 +33,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
           className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-[0.1em] mb-6"
         >
-          MAISON
+          DEMO
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

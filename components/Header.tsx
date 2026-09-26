@@ -30,7 +30,7 @@ export function Header() {
           {/* ロゴ */}
           <Link href="/" className="flex items-center">
             <span className="text-xl sm:text-2xl font-bold tracking-[0.15em] text-gray-900">
-              MAISON
+              DEMO
             </span>
           </Link>
 

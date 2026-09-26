@@ -18,7 +18,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "MAISON — Premium Lifestyle Store",
+  title: "DEMO — Premium Lifestyle Store",
   description:
     "上質なライフスタイルを提案するプレミアムセレクトショップ。厳選されたアイテムをお届けします。",
 };

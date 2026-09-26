@@ -16,7 +16,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* ブランド情報 */}
             <div>
-              <h3 className="text-xl font-bold tracking-[0.15em] mb-4">MAISON</h3>
+              <h3 className="text-xl font-bold tracking-[0.15em] mb-4">DEMO</h3>
               <p className="text-sm text-white/60 leading-relaxed">
                 上質なライフスタイルを提案する
                 <br />
@@ -54,7 +54,7 @@ export default function Home() {
 
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-xs text-white/30 text-center tracking-wider">
-              © 2024 MAISON. All rights reserved.
+              © 2026. DEMO All rights reserved.
             </p>
           </div>
         </div>
