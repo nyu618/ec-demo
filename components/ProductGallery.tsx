@@ -1,16 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface ProductGalleryProps {
   images: string[];
   productName: string;
+  selectedIndex: number;
+  onSelectImage: (index: number) => void;
 }
 
-export function ProductGallery({ images, productName }: ProductGalleryProps) {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+export function ProductGallery({ images, productName, selectedIndex, onSelectImage }: ProductGalleryProps) {
 
   return (
     <div className="space-y-4">
@@ -42,7 +42,7 @@ export function ProductGallery({ images, productName }: ProductGalleryProps) {
         {images.map((image, index) => (
           <button
             key={index}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => onSelectImage(index)}
             className={`relative aspect-square w-16 sm:w-20 rounded-lg overflow-hidden transition-all duration-200 ${
               index === selectedIndex
                 ? "ring-2 ring-accent ring-offset-2"

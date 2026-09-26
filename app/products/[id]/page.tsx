@@ -18,6 +18,9 @@ export default function ProductDetailPage({ params }: PageProps) {
   const product = products.find((p) => p.id === id);
   const { addItem } = useCart();
 
+  // 表示画像のインデックス状態
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
   // バリエーション選択状態
   const [selectedVariants, setSelectedVariants] = useState<Record<string, string>>(() => {
     if (!product) return {};
@@ -37,6 +40,17 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   const handleVariantChange = (type: string, value: string) => {
     setSelectedVariants((prev) => ({ ...prev, [type]: value }));
+    
+    // カラーが変更された場合、そのインデックスに対応する画像へ切り替える（ダミー連動）
+    if (type === "カラー" || type === "色") {
+      const colorVariant = product.variants.find(v => v.type === type);
+      if (colorVariant) {
+        const index = colorVariant.options.indexOf(value);
+        if (index !== -1 && index < product.images.length) {
+          setSelectedImageIndex(index);
+        }
+      }
+    }
   };
 
   return (
@@ -77,6 +91,8 @@ export default function ProductDetailPage({ params }: PageProps) {
               <ProductGallery
                 images={product.images}
                 productName={product.name}
+                selectedIndex={selectedImageIndex}
+                onSelectImage={setSelectedImageIndex}
               />
             </FadeInView>
 
@@ -110,19 +126,65 @@ export default function ProductDetailPage({ params }: PageProps) {
                           {selectedVariants[variant.type]}
                         </span>
                       </label>
-                      <select
-                        value={selectedVariants[variant.type]}
-                        onChange={(e) =>
-                          handleVariantChange(variant.type, e.target.value)
-                        }
-                        className="w-full border border-border rounded-lg px-4 py-3 text-sm bg-base text-text-primary appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all duration-200"
-                      >
-                        {variant.options.map((option) => (
-                          <option key={option} value={option}>
-                            {option}
-                          </option>
-                        ))}
-                      </select>
+                      {variant.type === "カラー" || variant.type === "色" ? (
+                        <div className="flex flex-wrap gap-3">
+                          {variant.options.map((option) => {
+                            // ダミーのカラーコードマッピング
+                            const colorMap: Record<string, string> = {
+                              "ブラック": "#111827",
+                              "ホワイト": "#FFFFFF",
+                              "グレー": "#9CA3AF",
+                              "ネイビー": "#1E3A8A",
+                              "ベージュ": "#D1D5DB",
+                              "キャメル": "#B45309",
+                              "ナチュラル": "#F5F5F4",
+                              "カーキ": "#4B5563",
+                              "ブラウン": "#78350F",
+                              "アイボリー": "#FEF3C7",
+                              "チャコール": "#374151",
+                              "ボルドー": "#7F1D1D",
+                              "オリーブ": "#4D7C0F",
+                            };
+                            const bg = colorMap[option] || "#ccc";
+                            const isSelected = selectedVariants[variant.type] === option;
+                            
+                            return (
+                              <button
+                                key={option}
+                                onClick={() => handleVariantChange(variant.type, option)}
+                                className={`w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${
+                                  isSelected ? "border-accent scale-110" : "border-transparent hover:scale-105"
+                                }`}
+                                aria-label={option}
+                              >
+                                <span 
+                                  className="w-6 h-6 rounded-full border border-border" 
+                                  style={{ backgroundColor: bg }} 
+                                />
+                              </button>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <div className="flex flex-wrap gap-3">
+                          {variant.options.map((option) => {
+                            const isSelected = selectedVariants[variant.type] === option;
+                            return (
+                              <button
+                                key={option}
+                                onClick={() => handleVariantChange(variant.type, option)}
+                                className={`min-w-[3rem] px-4 py-2 text-sm border rounded-lg transition-all duration-200 ${
+                                  isSelected 
+                                    ? "border-accent bg-accent text-white" 
+                                    : "border-border bg-base text-text-primary hover:border-accent hover:text-accent"
+                                }`}
+                              >
+                                {option}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
