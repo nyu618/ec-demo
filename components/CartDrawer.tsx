@@ -1,16 +1,25 @@
 "use client";
 
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 
 export function CartDrawer() {
+  const [showToast, setShowToast] = useState(false);
   const { items, isOpen, closeCart, removeItem, updateQuantity, totalPrice } =
     useCart();
 
   /** 価格フォーマット */
   const formatPrice = (price: number) =>
     `¥${price.toLocaleString()}`;
+
+  const handleCheckout = () => {
+    setShowToast(true);
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
+  };
 
   return (
     <AnimatePresence>
@@ -176,7 +185,10 @@ export function CartDrawer() {
                     {formatPrice(totalPrice)}
                   </span>
                 </div>
-                <button className="w-full bg-accent text-base py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-accent-hover transition-colors duration-200">
+                <button
+                  onClick={handleCheckout}
+                  className="w-full bg-accent text-base py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-accent-hover transition-colors duration-200"
+                >
                   ご購入手続きへ
                 </button>
                 <p className="text-xs text-text-muted text-center">
@@ -184,6 +196,20 @@ export function CartDrawer() {
                 </p>
               </div>
             )}
+            
+            {/* トースト通知 */}
+            <AnimatePresence>
+              {showToast && (
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 50 }}
+                  className="absolute bottom-24 left-1/2 -translate-x-1/2 w-11/12 bg-gray-900 text-white text-sm text-center py-3 px-4 rounded-lg shadow-xl z-50"
+                >
+                  デモサイトのため決済は行われません
+                </motion.div>
+              )}
+            </AnimatePresence>
           </motion.div>
         </>
       )}

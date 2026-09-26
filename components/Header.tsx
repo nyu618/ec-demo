@@ -74,6 +74,7 @@ export function Header() {
               <AnimatePresence>
                 {totalItems > 0 && (
                   <motion.span
+                    key={totalItems}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0 }}
