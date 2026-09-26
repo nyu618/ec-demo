@@ -32,6 +32,7 @@ export function ProductGallery({ images, productName, selectedIndex, onSelectIma
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
+              unoptimized
             />
           </motion.div>
         </AnimatePresence>
@@ -55,6 +56,7 @@ export function ProductGallery({ images, productName, selectedIndex, onSelectIma
               fill
               className="object-cover"
               sizes="80px"
+              unoptimized
             />
           </button>
         ))}
