@@ -41,8 +41,8 @@ export const products: Product[] = [
     name: "セットアップスーツ",
     nameEn: "Setup Suit",
     price: 15800,
-    category: "bottoms",
-    description: "フレンチリネンを贅沢に使用したワイドシルエットパンツ。ナチュラルな風合いと、リラックスした履き心地が特徴。ウエストはゴム仕様で快適な着用感を実現。",
+    category: "suits",
+    description: "洗練されたシルエットと快適な着心地を兼ね備えたセットアップスーツ。上質なウール混紡素材を使用し、シワになりにくくお手入れも簡単。ビジネスからフォーマルまで幅広いシーンで活躍する一着です。",
     images: [
       "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=1000&fit=crop&blend=F5F5F4&blend-mode=multiply&blend-alpha=30"
     ],

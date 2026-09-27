@@ -8,7 +8,7 @@ interface CategoryFilterProps {
   onChange: (category: Category) => void;
 }
 
-const categories: Category[] = ["all", "tops", "bottoms", "accessories", "outerwear"];
+const categories: Category[] = ["all", "tops", "suits", "accessories", "outerwear"];
 
 export function CategoryFilter({ selected, onChange }: CategoryFilterProps) {
   return (

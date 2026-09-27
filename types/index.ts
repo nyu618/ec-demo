@@ -25,12 +25,12 @@ export interface CartItem {
 }
 
 /** カテゴリ */
-export type Category = "all" | "tops" | "bottoms" | "accessories" | "outerwear";
+export type Category = "all" | "tops" | "suits" | "accessories" | "outerwear";
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   all: "すべて",
   tops: "トップス",
-  bottoms: "ボトムス",
+  suits: "スーツ",
   accessories: "アクセサリー",
   outerwear: "アウター",
 };
