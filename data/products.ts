@@ -26,7 +26,7 @@ export const products: Product[] = [
     category: "tops",
     description: "厳選されたオーガニックコットンを100%使用。肌に優しい着心地と、洗い込むほどに風合いが増す素材感が魅力です。ベーシックでありながら、シルエットにこだわった一枚。",
     images: [
-      "https://imgur.com/a/Ew898rM",
+      "/images/tshirt-white.jpg",
       "https://imgur.com/a/cWpTff9",
       "https://imgur.com/a/NJHkR5D"
     ],
