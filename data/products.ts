@@ -73,7 +73,7 @@ export const products: Product[] = [
     category: "tops",
     description: "カシミヤをブレンドした極上の肌触りのクルーネックニット。上品な光沢感と軽やかな着心地を両立。レイヤードスタイルにも最適です。",
     images: [
-      "https://imgur.com/a/WNa4fjy",
+      "/images/knit-charcoal.jpg",
       "https://imgur.com/a/6BDnaWL"
     ],
     variants: [
