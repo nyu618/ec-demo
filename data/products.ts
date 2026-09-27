@@ -10,7 +10,7 @@ export const products: Product[] = [
     description: "上質なウールブレンド素材を使用したオーバーサイズシルエットのコート。ミニマルなデザインでありながら、確かな存在感を放つ一着です。裏地付きで保温性も確保。日常使いからフォーマルシーンまで幅広く対応します。",
     images: [
       "/images/coat-black.jpg",
-      "https://imgur.com/a/RuAdWoc"
+      "/images/coat-grey.jpg"
     ],
     variants: [
       { type: "サイズ", options: ["S", "M", "L", "XL"] },
