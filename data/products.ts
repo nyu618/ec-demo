@@ -27,7 +27,7 @@ export const products: Product[] = [
     description: "厳選されたオーガニックコットンを100%使用。肌に優しい着心地と、洗い込むほどに風合いが増す素材感が魅力です。ベーシックでありながら、シルエットにこだわった一枚。",
     images: [
       "/images/tshirt-white.jpg",
-      "https://imgur.com/a/cWpTff9",
+      "/images/tshirt-black.jpg",
       "https://imgur.com/a/NJHkR5D"
     ],
     variants: [
