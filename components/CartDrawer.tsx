@@ -90,9 +90,21 @@ export function CartDrawer() {
                 </div>
               ) : (
                 <ul className="space-y-6">
-                  {items.map((item) => (
+                  {items.map((item) => {
+                    const getImage = () => {
+                      if (!item.selectedVariants["カラー"]) return item.product.images[0];
+                      const colorIndex = item.product.variants.findIndex(v => v.type === "カラー");
+                      if (colorIndex !== -1) {
+                        const optionIndex = item.product.variants[colorIndex].options.indexOf(item.selectedVariants["カラー"]);
+                        if (optionIndex !== -1 && optionIndex < item.product.images.length) {
+                          return item.product.images[optionIndex];
+                        }
+                      }
+                      return item.product.images[0];
+                    };
+                    return (
                     <motion.li
-                      key={item.product.id}
+                      key={item.id}
                       layout
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -102,7 +114,7 @@ export function CartDrawer() {
                       {/* 商品画像 */}
                       <div className="w-20 h-24 relative rounded-lg overflow-hidden bg-base-light flex-shrink-0">
                         <Image
-                          src={item.product.images[0]}
+                          src={getImage()}
                           alt={item.product.name}
                           fill
                           className="object-cover"
@@ -115,6 +127,13 @@ export function CartDrawer() {
                         <h3 className="text-sm font-medium truncate">
                           {item.product.name}
                         </h3>
+                        {Object.keys(item.selectedVariants).length > 0 && (
+                          <p className="text-xs text-text-muted mt-0.5 truncate">
+                            {Object.entries(item.selectedVariants)
+                              .map(([k, v]) => `${k}: ${v}`)
+                              .join(" / ")}
+                          </p>
+                        )}
                         <p className="text-sm text-text-secondary mt-1">
                           {formatPrice(item.product.price)}
                         </p>
@@ -124,7 +143,7 @@ export function CartDrawer() {
                           <button
                             onClick={() =>
                               updateQuantity(
-                                item.product.id,
+                                item.id,
                                 item.quantity - 1
                               )
                             }
@@ -138,7 +157,7 @@ export function CartDrawer() {
                           <button
                             onClick={() =>
                               updateQuantity(
-                                item.product.id,
+                                item.id,
                                 item.quantity + 1
                               )
                             }
@@ -151,7 +170,7 @@ export function CartDrawer() {
 
                       {/* 削除ボタン */}
                       <button
-                        onClick={() => removeItem(item.product.id)}
+                        onClick={() => removeItem(item.id)}
                         className="self-start p-1 text-text-muted hover:text-accent transition-colors"
                         aria-label="商品を削除"
                       >
@@ -171,7 +190,8 @@ export function CartDrawer() {
                         </svg>
                       </button>
                     </motion.li>
-                  ))}
+                  );
+                })}
                 </ul>
               )}
             </div>

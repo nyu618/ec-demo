@@ -19,6 +19,7 @@ export interface Product {
 
 /** カート内アイテム */
 export interface CartItem {
+  id: string; // productId + variant identifiers
   product: Product;
   quantity: number;
   selectedVariants: Record<string, string>;
