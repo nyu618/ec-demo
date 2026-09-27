@@ -142,7 +142,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                               "ブラウン": "#78350F",
                               "アイボリー": "#FEF3C7",
                               "チャコール": "#374151",
-                              "ボルドー": "#7F1D1D",
+                              "ボルドー": "#541C26",
                               "オリーブ": "#4D7C0F",
                             };
                             const bg = colorMap[option] || "#ccc";

@@ -74,7 +74,7 @@ export const products: Product[] = [
     description: "カシミヤをブレンドした極上の肌触りのクルーネックニット。上品な光沢感と軽やかな着心地を両立。レイヤードスタイルにも最適です。",
     images: [
       "/images/knit-charcoal.jpg",
-      "https://imgur.com/a/6BDnaWL"
+      "/images/knit-bordeaux.jpg"
     ],
     variants: [
       { type: "サイズ", options: ["S", "M", "L", "XL"] },
