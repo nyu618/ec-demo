@@ -28,7 +28,7 @@ export const products: Product[] = [
     images: [
       "/images/tshirt-white.jpg",
       "/images/tshirt-black.jpg",
-      "https://imgur.com/a/NJHkR5D"
+      "/images/tshirt-beige.jpg"
     ],
     variants: [
       { type: "サイズ", options: ["XS", "S", "M", "L", "XL"] },

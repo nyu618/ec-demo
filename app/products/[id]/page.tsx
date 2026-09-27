@@ -135,7 +135,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                               "ホワイト": "#FFFFFF",
                               "グレー": "#9CA3AF",
                               "ネイビー": "#1E3A8A",
-                              "ベージュ": "#D1D5DB",
+                              "ベージュ": "#D5C4A1",
                               "キャメル": "#B45309",
                               "ナチュラル": "#F5F5F4",
                               "カーキ": "#4B5563",
