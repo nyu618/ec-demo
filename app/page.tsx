@@ -38,6 +38,16 @@ export default function Home() {
                     商品一覧
                   </Link>
                 </li>
+                <li>
+                  <Link href="/faq" className="text-sm text-white/70 hover:text-white transition-colors">
+                    よくある質問
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
+                    お問い合わせ
+                  </Link>
+                </li>
               </ul>
             </div>
 
