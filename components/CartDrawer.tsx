@@ -41,7 +41,7 @@ export function CartDrawer() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="fixed top-0 right-0 bottom-0 w-full max-w-md bg-base z-50 shadow-2xl flex flex-col"
+            className="fixed top-0 right-0 bottom-0 w-[90%] sm:w-[400px] bg-background z-50 shadow-2xl flex flex-col"
           >
             {/* ヘッダー */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-border">
@@ -207,7 +207,7 @@ export function CartDrawer() {
                 </div>
                 <button
                   onClick={handleCheckout}
-                  className="w-full bg-accent text-base py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-accent-hover transition-colors duration-200"
+                  className="w-full bg-black text-white py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-gray-800 transition-colors duration-200"
                 >
                   ご購入手続きへ
                 </button>

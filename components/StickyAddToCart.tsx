@@ -20,7 +20,7 @@ export function StickyAddToCart({ product, selectedVariants }: StickyAddToCartPr
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", damping: 25, stiffness: 300 }}
-      className="fixed bottom-0 left-0 right-0 md:hidden z-40 bg-base/90 backdrop-blur-lg border-t border-border px-4 py-3"
+      className="fixed bottom-0 left-0 right-0 md:hidden z-40 bg-background/90 backdrop-blur-lg border-t border-border px-4 py-3"
     >
       <div className="flex items-center gap-4">
         <div className="flex-1 min-w-0">

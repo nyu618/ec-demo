@@ -176,7 +176,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                                 className={`min-w-[3rem] px-4 py-2 text-sm border rounded-lg transition-all duration-200 ${
                                   isSelected 
                                     ? "border-accent bg-accent text-white" 
-                                    : "border-border bg-base text-text-primary hover:border-accent hover:text-accent"
+                                    : "border-border bg-background text-text-primary hover:border-accent hover:text-accent"
                                 }`}
                               >
                                 {option}

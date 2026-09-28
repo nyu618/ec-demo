@@ -75,7 +75,7 @@ export default function ContactPage() {
               value={formData.name}
               onChange={handleChange}
               placeholder="山田 太郎"
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
             />
           </div>
 
@@ -95,7 +95,7 @@ export default function ContactPage() {
               value={formData.email}
               onChange={handleChange}
               placeholder="example@email.com"
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
             />
           </div>
 
@@ -113,7 +113,7 @@ export default function ContactPage() {
               required
               value={formData.subject}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors appearance-none"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors appearance-none"
               style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%239CA3AF'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E")`,
                 backgroundRepeat: "no-repeat",
@@ -148,7 +148,7 @@ export default function ContactPage() {
               value={formData.message}
               onChange={handleChange}
               placeholder="お問い合わせ内容をご記入ください"
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors resize-none"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors resize-none"
             />
           </div>
 

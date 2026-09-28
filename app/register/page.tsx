@@ -55,7 +55,7 @@ export default function RegisterPage() {
               value={formData.name}
               onChange={handleChange}
               placeholder="山田 太郎"
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
             />
           </div>
 
@@ -74,7 +74,7 @@ export default function RegisterPage() {
               value={formData.email}
               onChange={handleChange}
               placeholder="example@email.com"
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
             />
           </div>
 
@@ -94,7 +94,7 @@ export default function RegisterPage() {
               value={formData.password}
               onChange={handleChange}
               placeholder="8文字以上で入力してください"
-              className="w-full px-4 py-3 bg-base border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg text-sm text-accent placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
             />
             <p className="text-xs text-text-muted mt-1.5">
               ※ 8文字以上の英数字を入力してください

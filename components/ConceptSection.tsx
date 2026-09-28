@@ -4,7 +4,7 @@ import { FadeInView } from "./FadeInView";
 
 export function ConceptSection() {
   return (
-    <section className="py-24 sm:py-32 px-4 bg-base">
+    <section className="py-24 sm:py-32 px-4 bg-background">
       <div className="max-w-3xl mx-auto text-center">
         <FadeInView>
           <p className="text-xs tracking-[0.4em] text-text-muted mb-8">
