@@ -53,6 +53,19 @@ export default function ProductDetailPage({ params }: PageProps) {
     }
   };
 
+  const handleImageSelect = (index: number) => {
+    setSelectedImageIndex(index);
+    
+    // 画像が切り替わった場合、それに対応するカラーを選択状態にする（ダミー連動）
+    const colorVariant = product.variants.find(v => v.type === "カラー" || v.type === "色");
+    if (colorVariant && index < colorVariant.options.length) {
+      setSelectedVariants(prev => ({
+        ...prev,
+        [colorVariant.type]: colorVariant.options[index]
+      }));
+    }
+  };
+
   return (
     <>
       <div className="pt-24 sm:pt-32 pb-32 md:pb-20 px-4">
@@ -92,7 +105,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 images={product.images}
                 productName={product.name}
                 selectedIndex={selectedImageIndex}
-                onSelectImage={setSelectedImageIndex}
+                onSelectImage={handleImageSelect}
               />
             </FadeInView>
 
