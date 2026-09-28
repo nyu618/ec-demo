@@ -16,7 +16,7 @@ export default function AboutPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         
         <div className="relative z-10 text-center px-4">
@@ -97,13 +97,13 @@ export default function AboutPage() {
       </section>
 
       {/* ブランドメッセージ */}
-      <section className="py-24 sm:py-32 px-4 bg-base-dark text-center">
+      <section className="py-24 sm:py-32 px-4 bg-accent text-center">
         <div className="max-w-3xl mx-auto">
           <FadeInView direction="up">
-            <h2 className="text-xs tracking-[0.3em] text-text-muted mb-8 uppercase">
+            <h2 className="text-xs tracking-[0.3em] text-white/60 mb-8 uppercase">
               Message
             </h2>
-            <p className="text-base sm:text-lg text-accent leading-loose tracking-wide font-medium">
+            <p className="text-base sm:text-lg text-white leading-loose tracking-wide font-medium">
               「衣服は、毎日を生きるための最も身近な道具である」<br /><br />
               その信念のもと、DEMOはスタートしました。<br />
               ただ着飾るためではなく、あなたの一日を少しだけ快適に、そして自信に満ちたものにするために。<br />
@@ -111,9 +111,9 @@ export default function AboutPage() {
               皆さまの日常を彩る存在であり続けます。
             </p>
             <div className="mt-12 flex justify-center">
-              <div className="w-12 h-px bg-border" />
+              <div className="w-12 h-px bg-white/20" />
             </div>
-            <p className="mt-8 text-sm text-text-secondary tracking-wider">
+            <p className="mt-8 text-sm text-white/80 tracking-wider">
               DEMO Founder & Creative Director
             </p>
           </FadeInView>
