@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useReducer, useCallback, ReactNode } from "react";
+import { createContext, useContext, useReducer, useCallback, ReactNode, useEffect, useRef } from "react";
 import { CartItem, Product } from "@/types";
 
 interface CartState {
@@ -9,6 +9,7 @@ interface CartState {
 }
 
 type CartAction =
+  | { type: "INIT_CART"; items: CartItem[] }
   | { type: "ADD_ITEM"; product: Product; selectedVariants: Record<string, string> }
   | { type: "REMOVE_ITEM"; cartItemId: string }
   | { type: "UPDATE_QUANTITY"; cartItemId: string; quantity: number }
@@ -42,6 +43,8 @@ function generateCartItemId(productId: string, variants: Record<string, string>)
 
 function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
+    case "INIT_CART":
+      return { ...state, items: action.items };
     case "ADD_ITEM": {
       const cartItemId = generateCartItemId(action.product.id, action.selectedVariants);
       const existingIndex = state.items.findIndex((item) => item.id === cartItemId);
@@ -102,6 +105,28 @@ function cartReducer(state: CartState, action: CartAction): CartState {
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(cartReducer, { items: [], isOpen: false });
+  const isInitialized = useRef(false);
+
+  // マウント時にlocalStorageからカート情報を復元
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("demo_cart_items");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        dispatch({ type: "INIT_CART", items: parsed });
+      }
+    } catch (e) {
+      console.error("Failed to load cart from localStorage", e);
+    }
+    isInitialized.current = true;
+  }, []);
+
+  // カートの中身が変更されたらlocalStorageに保存
+  useEffect(() => {
+    if (isInitialized.current) {
+      localStorage.setItem("demo_cart_items", JSON.stringify(state.items));
+    }
+  }, [state.items]);
 
   const addItem = useCallback(
     (product: Product, selectedVariants: Record<string, string>) =>
