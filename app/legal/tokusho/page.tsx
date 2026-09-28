@@ -19,7 +19,7 @@ export default function TokushoPage() {
           <table className="w-full text-sm">
             <tbody className="divide-y divide-border">
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   販売業者
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -27,7 +27,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   運営統括責任者
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -35,7 +35,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   所在地
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -44,7 +44,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   連絡先
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -53,7 +53,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   販売価格
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -61,7 +61,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   商品代金以外の必要料金
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -71,7 +71,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   お支払い方法
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -82,7 +82,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   商品の引渡時期
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">
@@ -91,7 +91,7 @@ export default function TokushoPage() {
                 </td>
               </tr>
               <tr>
-                <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
+                <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3 align-top">
                   返品・交換について
                 </th>
                 <td className="px-6 py-4 text-accent-light leading-relaxed">

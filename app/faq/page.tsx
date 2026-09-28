@@ -154,7 +154,7 @@ export default function FAQPage() {
         </div>
 
         {/* お問い合わせ誘導 */}
-        <div className="text-center mt-16 p-8 bg-base-light rounded-lg">
+        <div className="text-center mt-16 p-8 bg-background-light rounded-lg">
           <p className="text-sm text-accent-light mb-4">
             解決しない場合は、お気軽にお問い合わせください。
           </p>

@@ -9,7 +9,7 @@ export function FeaturedProducts() {
   const featuredProducts = products.filter((p) => p.featured).slice(0, 4);
 
   return (
-    <section className="py-20 sm:py-28 px-4 bg-base-light">
+    <section className="py-20 sm:py-28 px-4 bg-background-light">
       <div className="max-w-7xl mx-auto">
         <FadeInView>
           <div className="text-center mb-12 sm:mb-16">

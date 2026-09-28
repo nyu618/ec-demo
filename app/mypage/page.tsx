@@ -92,7 +92,7 @@ export default function MyPage() {
                 className="border border-border rounded-lg overflow-hidden"
               >
                 {/* 注文ヘッダー */}
-                <div className="bg-base-light px-5 py-3 flex flex-wrap items-center justify-between gap-2">
+                <div className="bg-background-light px-5 py-3 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-4">
                     <span className="text-xs text-text-muted tracking-wider">
                       {order.id}
@@ -110,7 +110,7 @@ export default function MyPage() {
                 <div className="divide-y divide-border">
                   {order.items.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-4 px-5 py-4">
-                      <div className="w-14 h-18 relative rounded overflow-hidden bg-base-light flex-shrink-0">
+                      <div className="w-14 h-18 relative rounded overflow-hidden bg-background-light flex-shrink-0">
                         <Image
                           src={item.image}
                           alt={item.name}
@@ -135,7 +135,7 @@ export default function MyPage() {
                 </div>
 
                 {/* 合計 */}
-                <div className="bg-base-light px-5 py-3 flex items-center justify-between">
+                <div className="bg-background-light px-5 py-3 flex items-center justify-between">
                   <span className="text-xs text-text-muted">合計</span>
                   <span className="text-sm font-semibold text-accent">
                     ¥{order.total.toLocaleString()}
@@ -152,7 +152,7 @@ export default function MyPage() {
             <table className="w-full text-sm">
               <tbody className="divide-y divide-border">
                 <tr>
-                  <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
+                  <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     お名前
                   </th>
                   <td className="px-6 py-4 text-accent-light">
@@ -160,7 +160,7 @@ export default function MyPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
+                  <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     メールアドレス
                   </th>
                   <td className="px-6 py-4 text-accent-light">
@@ -168,7 +168,7 @@ export default function MyPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
+                  <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     住所
                   </th>
                   <td className="px-6 py-4 text-accent-light">
@@ -176,7 +176,7 @@ export default function MyPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
+                  <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     電話番号
                   </th>
                   <td className="px-6 py-4 text-accent-light">
@@ -184,7 +184,7 @@ export default function MyPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
+                  <th className="bg-background-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     会員登録日
                   </th>
                   <td className="px-6 py-4 text-accent-light">

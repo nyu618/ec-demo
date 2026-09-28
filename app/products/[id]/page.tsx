@@ -211,7 +211,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 </div>
 
                 {/* 配送情報 */}
-                <div className="bg-base-light rounded-lg p-5">
+                <div className="bg-background-light rounded-lg p-5">
                   <div className="flex items-start gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

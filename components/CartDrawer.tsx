@@ -112,7 +112,7 @@ export function CartDrawer() {
                       className="flex gap-4"
                     >
                       {/* 商品画像 */}
-                      <div className="w-20 h-24 relative rounded-lg overflow-hidden bg-base-light flex-shrink-0">
+                      <div className="w-20 h-24 relative rounded-lg overflow-hidden bg-background-light flex-shrink-0">
                         <Image
                           src={getImage()}
                           alt={item.product.name}

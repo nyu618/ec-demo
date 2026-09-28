@@ -15,7 +15,7 @@ export function ProductGallery({ images, productName, selectedIndex, onSelectIma
   return (
     <div className="space-y-4">
       {/* メイン画像 */}
-      <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-base-light">
+      <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-background-light">
         <AnimatePresence mode="wait">
           <motion.div
             key={selectedIndex}

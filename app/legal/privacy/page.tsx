@@ -103,7 +103,7 @@ export default function PrivacyPage() {
             <h2 className="text-base font-medium text-accent mb-4 tracking-wider">
               7. お問い合わせ窓口
             </h2>
-            <div className="bg-base-light rounded-lg p-6">
+            <div className="bg-background-light rounded-lg p-6">
               <p className="font-medium text-accent mb-2">DEMO Inc. 個人情報保護担当</p>
               <p>メール: privacy@demo-store.jp</p>
               <p>電話: 03-1234-5678（受付時間 10:00〜20:00）</p>

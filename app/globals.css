@@ -7,9 +7,9 @@
 
 @theme {
   /* カラーパレット */
-  --color-base: #FFFFFF;
-  --color-base-light: #F9FAFB;
-  --color-base-dark: #F3F4F6;
+  --color-background: #FFFFFF;
+  --color-background-light: #F9FAFB;
+  --color-background-dark: #F3F4F6;
   --color-accent: #111827;
   --color-accent-light: #374151;
   --color-accent-hover: #1F2937;
@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  background: var(--color-base);
+  background: var(--color-background);
   color: var(--color-text-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -53,7 +53,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-base-light);
+  background: var(--color-background-light);
 }
 
 ::-webkit-scrollbar-thumb {

@@ -189,7 +189,7 @@ export default function ContactPage() {
         </form>
 
         {/* 補足情報 */}
-        <div className="mt-12 p-6 bg-base-light rounded-lg">
+        <div className="mt-12 p-6 bg-background-light rounded-lg">
           <h3 className="text-xs tracking-[0.3em] text-text-muted mb-3">
             OTHER CONTACT
           </h3>

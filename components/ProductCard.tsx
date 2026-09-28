@@ -26,7 +26,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
     >
       <Link href={`/products/${product.id}`} className="group block">
         {/* 画像コンテナ */}
-        <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-base-light">
+        <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-background-light">
           <Image
             src={product.images[0]}
             alt={product.name}
