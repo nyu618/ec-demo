@@ -29,8 +29,28 @@ export function ConceptSection() {
         </FadeInView>
 
         <FadeInView delay={0.45}>
-          <div className="mt-12 flex justify-center">
+          <div className="mt-12 flex flex-col items-center gap-8">
             <div className="w-12 h-px bg-border" />
+            <a
+              href="/about"
+              className="inline-flex items-center gap-2 text-sm tracking-wider text-accent border-b border-accent pb-1 hover:text-accent-light hover:border-accent-light transition-colors duration-200"
+            >
+              私たちについて
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </a>
           </div>
         </FadeInView>
       </div>

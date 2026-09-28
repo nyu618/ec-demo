@@ -15,6 +15,7 @@ export default function AboutPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
@@ -34,7 +35,6 @@ export default function AboutPage() {
         
         {/* スクロールインジケーター */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center">
-          <span className="text-white/60 text-[10px] tracking-[0.3em] mb-2">SCROLL</span>
           <div className="w-px h-12 bg-white/30 relative overflow-hidden">
             <div className="w-full h-1/2 bg-white absolute top-0 animate-scroll-down" />
           </div>
@@ -54,6 +54,7 @@ export default function AboutPage() {
                     alt="私たちの想い"
                     fill
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
               </FadeInView>
@@ -83,6 +84,7 @@ export default function AboutPage() {
                     alt="素材へのこだわり"
                     fill
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
               </FadeInView>
