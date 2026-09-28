@@ -110,7 +110,7 @@ function AccordionItem({ item }: { item: FAQItem }) {
             transition={{ duration: 0.25, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="text-sm text-text-secondary leading-relaxed pb-5 pr-8">
+            <p className="text-sm text-accent-light leading-relaxed pb-5 pr-8">
               {item.answer}
             </p>
           </motion.div>
@@ -132,7 +132,7 @@ export default function FAQPage() {
           <h1 className="text-2xl sm:text-3xl font-light tracking-wider text-accent">
             よくある質問
           </h1>
-          <p className="text-sm text-text-secondary mt-4">
+          <p className="text-sm text-accent-light mt-4">
             お客様からよくいただくご質問をまとめました。
           </p>
         </div>
@@ -155,7 +155,7 @@ export default function FAQPage() {
 
         {/* お問い合わせ誘導 */}
         <div className="text-center mt-16 p-8 bg-base-light rounded-lg">
-          <p className="text-sm text-text-secondary mb-4">
+          <p className="text-sm text-accent-light mb-4">
             解決しない場合は、お気軽にお問い合わせください。
           </p>
           <Link
@@ -184,7 +184,7 @@ export default function FAQPage() {
         <div className="text-center mt-12">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm tracking-wider text-text-secondary hover:text-accent transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-sm tracking-wider text-accent-light hover:text-accent transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         </div>
 
         {/* 本文 */}
-        <div className="space-y-10 text-sm text-text-secondary leading-relaxed">
+        <div className="space-y-10 text-sm text-accent-light leading-relaxed">
           <p>
             DEMO Inc.（以下「当社」）は、お客様の個人情報の保護を重要な責務と認識し、以下のプライバシーポリシーに基づき、個人情報の適切な取り扱いと保護に努めます。
           </p>
@@ -132,7 +132,7 @@ export default function PrivacyPage() {
         <div className="text-center mt-12">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm tracking-wider text-text-secondary hover:text-accent transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-sm tracking-wider text-accent-light hover:text-accent transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl sm:text-3xl font-light tracking-wide text-accent mt-4">
                   時を超えて愛されるデザイン
                 </h3>
-                <p className="text-sm sm:text-base text-text-secondary leading-loose mt-6">
+                <p className="text-sm sm:text-base text-accent-light leading-loose mt-6">
                   私たちはトレンドを追い求めるのではなく、長く寄り添える普遍的な美しさを大切にしています。<br />
                   無駄を削ぎ落としたミニマルなデザインは、着る人の個性を引き立て、どんなライフスタイルにも自然に溶け込みます。<br />
                   一過性の消費ではなく、愛着を持って使い続けられるアイテムをご提案します。
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl sm:text-3xl font-light tracking-wide text-accent mt-4">
                   妥協なき素材選び
                 </h3>
-                <p className="text-sm sm:text-base text-text-secondary leading-loose mt-6">
+                <p className="text-sm sm:text-base text-accent-light leading-loose mt-6">
                   素晴らしいデザインは、素晴らしい素材から生まれます。<br />
                   私たちは世界中から上質な生地を厳選し、肌触りや耐久性、環境への配慮など、あらゆる角度から検証を重ねています。<br />
                   オーガニックコットンやリサイクル素材の積極的な採用を通じ、サステナブルな未来へ向けたものづくりにも挑戦しています。

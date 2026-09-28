@@ -52,7 +52,7 @@ export default function ContactPage() {
           <h1 className="text-2xl sm:text-3xl font-light tracking-wider text-accent">
             お問い合わせ
           </h1>
-          <p className="text-sm text-text-secondary mt-4">
+          <p className="text-sm text-accent-light mt-4">
             ご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。
           </p>
         </div>
@@ -193,7 +193,7 @@ export default function ContactPage() {
           <h3 className="text-xs tracking-[0.3em] text-text-muted mb-3">
             OTHER CONTACT
           </h3>
-          <div className="space-y-2 text-sm text-text-secondary">
+          <div className="space-y-2 text-sm text-accent-light">
             <p>メール: info@demo-store.jp</p>
             <p>電話: 03-1234-5678（受付時間 10:00〜20:00）</p>
           </div>
@@ -203,7 +203,7 @@ export default function ContactPage() {
         <div className="text-center mt-12">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm tracking-wider text-text-secondary hover:text-accent transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-sm tracking-wider text-accent-light hover:text-accent transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

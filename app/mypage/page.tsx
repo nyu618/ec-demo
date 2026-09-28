@@ -48,7 +48,7 @@ export default function MyPage() {
           <h1 className="text-2xl sm:text-3xl font-light tracking-wider text-accent">
             マイページ
           </h1>
-          <p className="text-sm text-text-secondary mt-4">
+          <p className="text-sm text-accent-light mt-4">
             DEMO 太郎 様、ようこそ
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function MyPage() {
             className={`flex-1 py-3 text-sm tracking-wider text-center transition-colors relative ${
               activeTab === "orders"
                 ? "text-accent font-medium"
-                : "text-text-muted hover:text-text-secondary"
+                : "text-text-muted hover:text-accent-light"
             }`}
           >
             注文履歴
@@ -73,7 +73,7 @@ export default function MyPage() {
             className={`flex-1 py-3 text-sm tracking-wider text-center transition-colors relative ${
               activeTab === "profile"
                 ? "text-accent font-medium"
-                : "text-text-muted hover:text-text-secondary"
+                : "text-text-muted hover:text-accent-light"
             }`}
           >
             会員情報
@@ -97,7 +97,7 @@ export default function MyPage() {
                     <span className="text-xs text-text-muted tracking-wider">
                       {order.id}
                     </span>
-                    <span className="text-xs text-text-secondary">
+                    <span className="text-xs text-accent-light">
                       {order.date}
                     </span>
                   </div>
@@ -155,7 +155,7 @@ export default function MyPage() {
                   <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     お名前
                   </th>
-                  <td className="px-6 py-4 text-text-secondary">
+                  <td className="px-6 py-4 text-accent-light">
                     DEMO 太郎
                   </td>
                 </tr>
@@ -163,7 +163,7 @@ export default function MyPage() {
                   <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     メールアドレス
                   </th>
-                  <td className="px-6 py-4 text-text-secondary">
+                  <td className="px-6 py-4 text-accent-light">
                     demo-taro@email.com
                   </td>
                 </tr>
@@ -171,7 +171,7 @@ export default function MyPage() {
                   <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     住所
                   </th>
-                  <td className="px-6 py-4 text-text-secondary">
+                  <td className="px-6 py-4 text-accent-light">
                     〒100-0001 東京都千代田区千代田1-1-1
                   </td>
                 </tr>
@@ -179,7 +179,7 @@ export default function MyPage() {
                   <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     電話番号
                   </th>
-                  <td className="px-6 py-4 text-text-secondary">
+                  <td className="px-6 py-4 text-accent-light">
                     090-1234-5678
                   </td>
                 </tr>
@@ -187,7 +187,7 @@ export default function MyPage() {
                   <th className="bg-base-light px-6 py-4 text-left font-medium text-accent w-1/3">
                     会員登録日
                   </th>
-                  <td className="px-6 py-4 text-text-secondary">
+                  <td className="px-6 py-4 text-accent-light">
                     2026年1月15日
                   </td>
                 </tr>
@@ -224,7 +224,7 @@ export default function MyPage() {
         <div className="text-center mt-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm tracking-wider text-text-secondary hover:text-accent transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-sm tracking-wider text-accent-light hover:text-accent transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -15,7 +15,7 @@ export default function TermsPage() {
         </div>
 
         {/* 本文 */}
-        <div className="space-y-10 text-sm text-text-secondary leading-relaxed">
+        <div className="space-y-10 text-sm text-accent-light leading-relaxed">
           <section>
             <h2 className="text-base font-medium text-accent mb-4 tracking-wider">
               第1条（総則）
@@ -122,7 +122,7 @@ export default function TermsPage() {
         <div className="text-center mt-12">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm tracking-wider text-text-secondary hover:text-accent transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-sm tracking-wider text-accent-light hover:text-accent transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

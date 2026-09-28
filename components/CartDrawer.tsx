@@ -48,7 +48,7 @@ export function CartDrawer() {
               <h2 className="text-lg font-semibold tracking-wider">CART</h2>
               <button
                 onClick={closeCart}
-                className="p-2 text-text-secondary hover:text-accent transition-colors"
+                className="p-2 text-accent-light hover:text-accent transition-colors"
                 aria-label="カートを閉じる"
               >
                 <svg
@@ -134,7 +134,7 @@ export function CartDrawer() {
                               .join(" / ")}
                           </p>
                         )}
-                        <p className="text-sm text-text-secondary mt-1">
+                        <p className="text-sm text-accent-light mt-1">
                           {formatPrice(item.product.price)}
                         </p>
 
@@ -147,7 +147,7 @@ export function CartDrawer() {
                                 item.quantity - 1
                               )
                             }
-                            className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-text-secondary hover:border-accent hover:text-accent transition-colors"
+                            className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-accent-light hover:border-accent hover:text-accent transition-colors"
                           >
                             <span className="text-xs">−</span>
                           </button>
@@ -161,7 +161,7 @@ export function CartDrawer() {
                                 item.quantity + 1
                               )
                             }
-                            className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-text-secondary hover:border-accent hover:text-accent transition-colors"
+                            className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-accent-light hover:border-accent hover:text-accent transition-colors"
                           >
                             <span className="text-xs">+</span>
                           </button>
@@ -200,7 +200,7 @@ export function CartDrawer() {
             {items.length > 0 && (
               <div className="border-t border-border px-6 py-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-text-secondary">小計</span>
+                  <span className="text-sm text-accent-light">小計</span>
                   <span className="text-lg font-semibold">
                     {formatPrice(totalPrice)}
                   </span>

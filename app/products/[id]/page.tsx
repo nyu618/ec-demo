@@ -205,7 +205,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                   <h2 className="text-sm font-medium text-text-primary mb-3">
                     商品について
                   </h2>
-                  <p className="text-sm text-text-secondary leading-loose">
+                  <p className="text-sm text-accent-light leading-loose">
                     {product.description}
                   </p>
                 </div>

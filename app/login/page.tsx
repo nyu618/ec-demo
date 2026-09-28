@@ -118,7 +118,7 @@ export default function LoginPage() {
 
         {/* 新規登録リンク */}
         <div className="text-center">
-          <p className="text-sm text-text-secondary mb-3">
+          <p className="text-sm text-accent-light mb-3">
             アカウントをお持ちでない方
           </p>
           <Link

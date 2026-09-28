@@ -21,7 +21,7 @@ export function ConceptSection() {
         </FadeInView>
 
         <FadeInView delay={0.3}>
-          <p className="text-sm sm:text-base text-text-secondary leading-loose max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-accent-light leading-loose max-w-2xl mx-auto">
             MAISONは、素材・デザイン・機能性のすべてにおいて妥協のないものづくりを追求しています。
             流行に左右されない、本当に価値のあるアイテムだけを厳選してお届けします。
             一つひとつの製品が、あなたの日常を少しだけ特別なものに変える存在であることを願って。

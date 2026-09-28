@@ -20,7 +20,7 @@ export function CategoryFilter({ selected, onChange }: CategoryFilterProps) {
           className={`relative px-4 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm tracking-wider rounded-full transition-colors duration-200 ${
             selected === category
               ? "text-base"
-              : "text-text-secondary hover:text-accent"
+              : "text-accent-light hover:text-accent"
           }`}
         >
           {selected === category && (

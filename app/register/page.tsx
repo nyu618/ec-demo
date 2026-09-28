@@ -138,7 +138,7 @@ export default function RegisterPage() {
 
         {/* ログインリンク */}
         <div className="text-center mt-8">
-          <p className="text-sm text-text-secondary">
+          <p className="text-sm text-accent-light">
             すでにアカウントをお持ちの方は{" "}
             <Link
               href="/login"
