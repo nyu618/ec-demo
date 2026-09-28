@@ -192,7 +192,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 {/* カートに追加ボタン (デスクトップ) */}
                 <button
                   onClick={() => addItem(product, selectedVariants)}
-                  className="hidden md:block w-full bg-accent text-base py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-accent-hover active:scale-[0.98] transition-all duration-200"
+                  className="hidden md:block w-full bg-black text-white py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-gray-800 active:scale-[0.98] transition-all duration-200"
                 >
                   カートに追加する
                 </button>

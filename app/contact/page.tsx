@@ -156,7 +156,7 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-accent text-base py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-accent-hover transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-black text-white py-4 rounded-lg text-sm font-medium tracking-wider hover:bg-gray-800 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
               <span className="inline-flex items-center gap-2">
@@ -231,7 +231,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-accent text-base text-sm text-center py-4 px-8 rounded-lg shadow-xl z-50"
+            className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-black text-white text-sm text-center py-4 px-8 rounded-lg shadow-xl z-50"
           >
             <div className="flex items-center gap-3">
               <svg

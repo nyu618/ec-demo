@@ -31,7 +31,7 @@ export function StickyAddToCart({ product, selectedVariants }: StickyAddToCartPr
         </div>
         <button
           onClick={() => addItem(product, selectedVariants)}
-          className="bg-accent text-base px-6 py-3 rounded-lg text-sm font-medium tracking-wider hover:bg-accent-hover transition-colors duration-200 whitespace-nowrap"
+          className="bg-black text-white px-6 py-3 rounded-lg text-sm font-medium tracking-wider hover:bg-gray-800 transition-colors duration-200 whitespace-nowrap"
         >
           カートに追加
         </button>
