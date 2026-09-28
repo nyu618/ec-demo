@@ -44,6 +44,12 @@ export function Header() {
                 HOME
               </Link>
               <Link
+                href="/about"
+                className="text-sm tracking-wider text-gray-600 hover:text-gray-900 transition-colors duration-200"
+              >
+                ABOUT
+              </Link>
+              <Link
                 href="/products"
                 className="text-sm tracking-wider text-gray-600 hover:text-gray-900 transition-colors duration-200"
               >

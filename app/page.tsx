@@ -34,6 +34,11 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/about" className="text-sm text-white/70 hover:text-white transition-colors">
+                    私たちについて
+                  </Link>
+                </li>
+                <li>
                   <Link href="/products" className="text-sm text-white/70 hover:text-white transition-colors">
                     商品一覧
                   </Link>
