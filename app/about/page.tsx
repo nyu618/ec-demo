@@ -10,12 +10,11 @@ export default function AboutPage() {
       <section className="relative h-screen min-h-[600px] w-full flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop"
+            src="/images/about-hero.jpg"
             alt="About DEMO"
             fill
             className="object-cover"
             priority
-            unoptimized
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
@@ -32,13 +31,6 @@ export default function AboutPage() {
             </h1>
           </FadeInView>
         </div>
-        
-        {/* スクロールインジケーター */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center">
-          <div className="w-px h-12 bg-white/30 relative overflow-hidden">
-            <div className="w-full h-1/2 bg-white absolute top-0 animate-scroll-down" />
-          </div>
-        </div>
       </section>
 
       {/* コンセプトセクション（ジグザグ） */}
@@ -50,11 +42,10 @@ export default function AboutPage() {
               <FadeInView direction="right">
                 <div className="relative aspect-[4/5] w-full rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1434389678259-3831238c28d3?q=80&w=2070&auto=format&fit=crop"
+                    src="/images/coat-grey.jpg"
                     alt="私たちの想い"
                     fill
                     className="object-cover"
-                    unoptimized
                   />
                 </div>
               </FadeInView>
@@ -80,11 +71,10 @@ export default function AboutPage() {
               <FadeInView direction="left">
                 <div className="relative aspect-[4/5] w-full rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1574888022718-4a92c303f2df?q=80&w=2070&auto=format&fit=crop"
+                    src="/images/tshirt-beige.jpg"
                     alt="素材へのこだわり"
                     fill
                     className="object-cover"
-                    unoptimized
                   />
                 </div>
               </FadeInView>
@@ -107,13 +97,13 @@ export default function AboutPage() {
       </section>
 
       {/* ブランドメッセージ */}
-      <section className="py-24 sm:py-32 px-4 bg-base-light text-center">
+      <section className="py-24 sm:py-32 px-4 bg-base-dark text-center">
         <div className="max-w-3xl mx-auto">
           <FadeInView direction="up">
             <h2 className="text-xs tracking-[0.3em] text-text-muted mb-8 uppercase">
               Message
             </h2>
-            <p className="text-base sm:text-lg text-accent leading-loose tracking-wide">
+            <p className="text-base sm:text-lg text-accent leading-loose tracking-wide font-medium">
               「衣服は、毎日を生きるための最も身近な道具である」<br /><br />
               その信念のもと、DEMOはスタートしました。<br />
               ただ着飾るためではなく、あなたの一日を少しだけ快適に、そして自信に満ちたものにするために。<br />
@@ -123,7 +113,7 @@ export default function AboutPage() {
             <div className="mt-12 flex justify-center">
               <div className="w-12 h-px bg-border" />
             </div>
-            <p className="mt-8 text-sm text-text-muted tracking-wider">
+            <p className="mt-8 text-sm text-text-secondary tracking-wider">
               DEMO Founder & Creative Director
             </p>
           </FadeInView>
